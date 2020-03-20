@@ -1,0 +1,49 @@
+<div align="center" class="container ">
+
+  <H1 class="card-header">Role List</H1>
+  
+  <div   class="alert alert-danger" style="min-height: 24px;">{{form.message}}</div>
+  <div class="card-body">
+  <p style="color:red">{{message}} </p>
+  
+  <table>
+    <tr>
+      <td>Role Name:</td>
+      <td><input [(ngModel)]="form.searchParams.name" name="name" class="form-control" type="text"></td>
+     
+   <!--  </tr>
+    
+    <tr> -->
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <td><button (click)="search()" class="btn btn-warning"> Search</button></td>
+     
+    </tr>
+    <br>
+  </table>
+  
+  <table border="1" class="table">
+    <tr class="table-head">
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <tr *ngFor="let e of form.list; let i = index">
+      <td>{{i +1 + ( form.pageNo*5)}}</td>
+      <td>{{e.name}}</td>
+      <td>{{e.discription}}</td>
+      
+      <td><button (click)="edit(e.id)" class="fa fa-pencil-square-o ">Edit</button></td>
+      <td><button (click)="delete(e.id)" class="fa fa-trash">Delete</button></td>
+    </tr>
+  
+  </table>
+  <tr>
+    <td><button (click)="previous()" class="btn btn-danger">Previous</button></td>&nbsp;
+  <td><button (click)="next()" class="btn btn-success">Next</button></td>
+  
+  </tr>
+  </div>
+  </div>
+  

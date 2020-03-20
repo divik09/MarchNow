@@ -1,0 +1,220 @@
+Answers of Assignments
+
+public class Swapping{
+	public static void main(String[] args) {
+		
+	
+	int a=20;
+	int b=30;
+	
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	System.out.println(a+" "+b);
+	
+	int x=30;
+	int y=20;
+	int z=0;
+	
+	z=y;
+	y=x;
+	x=z;
+	System.out.println(x+" "+y);
+	
+	}
+}
+
+
+
+
+Prime Number
+
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+		int num=19;
+		boolean flag=true;
+		if(num==0||num==1){
+			flag=true;
+		}
+		for(int i=2;i<=num/2;i++){
+			if(num%i==0){
+				flag=false;
+				break;
+			}
+			else{
+				flag=true;
+			}
+		}
+		if(flag==true){
+			System.out.println(num+" is  a prime number");
+		}else{
+			System.out.println(num+" is not a prime number");
+		}
+	}
+}
+
+
+
+Armstrong Number
+
+
+public class Armstrong {
+	
+	 public static void main (String []args){
+		
+		 int no=153;
+		 int temp=no;
+		 int a, sum=0;
+		 
+		 while(no>0){
+			 
+			 a=no%10;
+			 sum=sum+a*a*a;
+			 no=no/10;
+		 }
+		 
+		 System.out.println(sum);
+		 if(temp==sum){
+			 System.out.println("yes");
+			
+		 }else{
+			 System.out.println("no");
+		 }
+		 
+	 }
+
+}
+
+
+
+Factorial Number
+
+
+
+public class Factorial {
+  public static void main(String[] args) {
+	
+	  int fact =1;
+	  for (int i = 1; i <=5; i++) {
+		fact=fact*i;
+		System.out.println(fact );
+	}
+}
+}
+
+
+public class FibonacciSeries {
+ public static void main(String[] args) {
+	 int a=0;
+	 int b=1;
+	 int c=0;
+	 int n=10;
+	 
+	 for (int i = 0; i <n; i++) {
+		c=a+b;
+		a=b;
+		b=c;
+		System.out.println(c +" ");
+	}
+}
+}
+
+
+
+
+
+
+
+public class Reverse {
+	public static void main(String[] args) {
+		
+		int i=3698;
+		 int rev=0;
+		while(i>0){	
+			
+			rev=rev*10;
+			rev=rev+(i%10);
+			i=i/10;
+			
+		}
+		System.out.println(rev);
+	}
+	}
+
+
+
+public class EvenNosumAndAvrg {
+	
+	public static void main(String[] args) {
+		
+		int evenSum=0;
+		int oddSum=0;
+		int evenCount=0;
+		int oddCount=0;
+		
+		for (int i = 1; i <50; i++) {
+			if(i%2==0){
+				evenSum=evenSum+i;
+				evenCount++;
+				System.out.println(i+" ");
+			}else{
+				oddSum=oddSum+i;
+				oddCount++;
+			}
+			
+		}
+		double evenAvg=evenSum/evenCount;
+		System.out.println("Even avg ="+evenAvg);
+		
+		double oddAvg=oddSum/oddCount;
+		System.out.println("odd avg="+oddAvg);
+	}
+
+}
+
+
+
+
+
+
+public class Palindrome {
+	public static void main(String[] args) {
+		int no=121;
+		int a;
+		int temp=no;
+		int rev=0;
+		while(no>0){
+			a=no%10;
+			rev=rev*10+a;
+			no=no/10;
+			
+		}
+		System.out.println(rev);
+		if(rev==temp){
+			System.out.println("palindrome");
+			
+		}else{
+			System.out.println("no");
+		}
+	}
+
+}
+
+
+
+
+public class Random {
+	public static void main(String[] args) {
+		
+		for (int i = 1; i <=5; i++) {
+			//System.out.println((int)(Math.random()*(100)));
+			
+			int rando = 1000-(int)(Math.random()*(500));
+			System.out.println(rando);
+		}
+	}
+
+}
+

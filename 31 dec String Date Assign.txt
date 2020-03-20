@@ -1,0 +1,38 @@
+Write a program to Convert Char Array To String.
+
+Write a program to count character in string.(optional digit,space,letters count also)
+
+Write a program to convert first letter of name capital 
+like: pradeep to Pradeep;
+
+Write a program to Convert Convert Char To String
+
+Write a program to Convert Convert String To Char
+
+Write a program to Convert  Convert String To Char Array
+
+Write a program to Convert  Convert String To LowerCase
+
+Write a program to Convert  Convert String To Upper And LowerCase
+
+Write a program to Convert String to Interger.
+
+Write a program to  Count Character In String
+
+Write a program to CountVowelInString
+
+Write a program to Format Date Using FormatMethod
+
+write a program to delete character from String;
+
+Write a program to split a part of character from String;
+
+Write a program to concate two string using concate method
+
+Write a program to Extract last name from your name using substring Method;
+
+Write a program that contains two statement , first statement will
+store a string in String literal pool and second statement will fetch
+string from string literal pool;
+
+Write a program to Reverse a String.

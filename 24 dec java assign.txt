@@ -1,0 +1,7 @@
+-Largest number in Array also second largest number in array.
+-Print table from 2 to 10 with array.
+-Print table from 2 to 20 with for Loop.
+-Make Diamond Pattern with for loop-
+.Make program of Harmonic Series.
+-Find Missing element in Array.
+-Find even  from array with sum , count and average of numbers 
